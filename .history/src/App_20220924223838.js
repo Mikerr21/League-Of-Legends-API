@@ -91,7 +91,7 @@ function App() {
           sx={{ width: "50%", maxWidth: 660, bgcolor: "background.paper" }}
           component="nav"
           aria-labelledby="nested-list-subheader"
-          subheader={<Typography variant="h3">*Summoner's profile*</Typography>}
+          subheader={<Typography variant="h3">Summoner's profile</Typography>}
         >
      <ListItemText>
             <Typography variant="h4">IG-Name:</Typography>
@@ -105,30 +105,6 @@ function App() {
             </Typography>
             <ListItemText>
             <Typography variant="h5">{playerData.puuid}</Typography>
-          </ListItemText>
-          </ListItemText>
-          <ListItemText>
-            <Typography variant="h4">
-              Summoner's LEVEL:
-            </Typography>
-            <ListItemText>
-            <Typography variant="h5">{playerData.summonerLevel}</Typography>
-          </ListItemText>
-          </ListItemText>
-          <ListItemText>
-            <Typography variant="h4">
-              Account ID:
-            </Typography>
-            <ListItemText>
-            <Typography variant="h5">{playerData.accountId}</Typography>
-          </ListItemText>
-          </ListItemText>
-          <ListItemText>
-            <Typography variant="h4">
-              Profile ICON ID:
-            </Typography>
-            <ListItemText>
-            <Typography variant="h5">{playerData.profileIconId}</Typography>
           </ListItemText>
           </ListItemText>
         </List>

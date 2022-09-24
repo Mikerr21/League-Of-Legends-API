@@ -86,52 +86,60 @@ function App() {
             Search player
           </Button>
         </Box>
+        {JSON.stringify(playerData.data)}
+
         
+     <Grid
+        container
+        spacing={0}
+        direction="column"
+        alignItems="center"
+        justifyContent="center"
+        style={{ minHeight: "100vh" }}
+      >
         <List
-          sx={{ width: "50%", maxWidth: 660, bgcolor: "background.paper" }}
+          sx={{ width: "100%", maxWidth: 660, bgcolor: "background.paper" }}
           component="nav"
           aria-labelledby="nested-list-subheader"
-          subheader={<Typography variant="h3">*Summoner's profile*</Typography>}
+          subheader={<Typography variant="h3">Summoner's profile</Typography>}
         >
+          {/* <ListItemButton>
+        <ListItemIcon>
+          <SendIcon />
+        </ListItemIcon>
+        <ListItemText primary="Sent mail" />
+      </ListItemButton>
+      <ListItemButton>
+        <ListItemIcon>
+          <DraftsIcon />
+        </ListItemIcon>
+        <ListItemText primary="Drafts" />
+      </ListItemButton>
+        <List component="div" disablePadding>
+          <ListItemButton sx={{ pl: 4 }}>
+            <ListItemIcon>
+              <StarBorder />
+            </ListItemIcon>
+            <ListItemText primary="Starred" />
+          </ListItemButton>
+        </List>
+     */}
      <ListItemText>
-            <Typography variant="h4">IG-Name:</Typography>
+            <Typography variant="h3">Summoner:</Typography>
           </ListItemText>
           <ListItemText>
-            <Typography variant="h5">{searchPlayer}</Typography>
+            <Typography variant="h6">{searchPlayer}</Typography>
           </ListItemText>
           <ListItemText>
-            <Typography variant="h4">
-              Summoner's PUUID:
+            <Typography variant="h6">
+              Summoner's PUUID:{playerData.puuid}
             </Typography>
-            <ListItemText>
-            <Typography variant="h5">{playerData.puuid}</Typography>
-          </ListItemText>
-          </ListItemText>
-          <ListItemText>
-            <Typography variant="h4">
-              Summoner's LEVEL:
-            </Typography>
-            <ListItemText>
-            <Typography variant="h5">{playerData.summonerLevel}</Typography>
-          </ListItemText>
-          </ListItemText>
-          <ListItemText>
-            <Typography variant="h4">
-              Account ID:
-            </Typography>
-            <ListItemText>
-            <Typography variant="h5">{playerData.accountId}</Typography>
-          </ListItemText>
-          </ListItemText>
-          <ListItemText>
-            <Typography variant="h4">
-              Profile ICON ID:
-            </Typography>
-            <ListItemText>
-            <Typography variant="h5">{playerData.profileIconId}</Typography>
-          </ListItemText>
           </ListItemText>
         </List>
+
+      </Grid>
+          
+
       </Grid>
     </div>
   );

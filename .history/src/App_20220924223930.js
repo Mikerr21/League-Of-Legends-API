@@ -112,23 +112,7 @@ function App() {
               Summoner's LEVEL:
             </Typography>
             <ListItemText>
-            <Typography variant="h5">{playerData.summonerLevel}</Typography>
-          </ListItemText>
-          </ListItemText>
-          <ListItemText>
-            <Typography variant="h4">
-              Account ID:
-            </Typography>
-            <ListItemText>
-            <Typography variant="h5">{playerData.accountId}</Typography>
-          </ListItemText>
-          </ListItemText>
-          <ListItemText>
-            <Typography variant="h4">
-              Profile ICON ID:
-            </Typography>
-            <ListItemText>
-            <Typography variant="h5">{playerData.profileIconId}</Typography>
+            <Typography variant="h5">{playerData.summonerlevel}</Typography>
           </ListItemText>
           </ListItemText>
         </List>

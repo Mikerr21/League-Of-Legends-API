@@ -123,14 +123,6 @@ function App() {
             <Typography variant="h5">{playerData.accountId}</Typography>
           </ListItemText>
           </ListItemText>
-          <ListItemText>
-            <Typography variant="h4">
-              Profile ICON ID:
-            </Typography>
-            <ListItemText>
-            <Typography variant="h5">{playerData.profileIconId}</Typography>
-          </ListItemText>
-          </ListItemText>
         </List>
       </Grid>
     </div>

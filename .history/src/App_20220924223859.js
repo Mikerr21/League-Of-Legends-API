@@ -107,30 +107,6 @@ function App() {
             <Typography variant="h5">{playerData.puuid}</Typography>
           </ListItemText>
           </ListItemText>
-          <ListItemText>
-            <Typography variant="h4">
-              Summoner's LEVEL:
-            </Typography>
-            <ListItemText>
-            <Typography variant="h5">{playerData.summonerLevel}</Typography>
-          </ListItemText>
-          </ListItemText>
-          <ListItemText>
-            <Typography variant="h4">
-              Account ID:
-            </Typography>
-            <ListItemText>
-            <Typography variant="h5">{playerData.accountId}</Typography>
-          </ListItemText>
-          </ListItemText>
-          <ListItemText>
-            <Typography variant="h4">
-              Profile ICON ID:
-            </Typography>
-            <ListItemText>
-            <Typography variant="h5">{playerData.profileIconId}</Typography>
-          </ListItemText>
-          </ListItemText>
         </List>
       </Grid>
     </div>
