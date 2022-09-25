@@ -94,13 +94,13 @@ function App() {
           subheader={<Typography variant="h3">*Summoner's profile*</Typography>}
         >
      <ListItemText>
-            <Typography variant="h4" color="blue">IG-Name:</Typography>
+            <Typography variant="h4" color="cykan">IG-Name:</Typography>
           </ListItemText>
           <ListItemText>
-            <Typography variant="h5" >{searchPlayer}</Typography>
+            <Typography variant="h5">{searchPlayer}</Typography>
           </ListItemText>
           <ListItemText>
-            <Typography variant="h4" color="blue">
+            <Typography variant="h4">
               Summoner's PUUID:
             </Typography>
             <ListItemText>
@@ -108,7 +108,7 @@ function App() {
           </ListItemText>
           </ListItemText>
           <ListItemText>
-            <Typography variant="h4" color="blue">
+            <Typography variant="h4">
               Summoner's LEVEL:
             </Typography>
             <ListItemText>
@@ -116,7 +116,7 @@ function App() {
           </ListItemText>
           </ListItemText>
           <ListItemText>
-            <Typography variant="h4" color="blue">
+            <Typography variant="h4">
               Account ID:
             </Typography>
             <ListItemText>
@@ -124,11 +124,11 @@ function App() {
           </ListItemText>
           </ListItemText>
           <ListItemText>
-            <Typography variant="h4" color="blue">
+            <Typography variant="h4">
               Profile ICON ID:
             </Typography>
             <ListItemText>
-              <img width="100" height="100" src={"http://ddragon.leagueoflegends.com/cdn/11.21.1/img/profileicon/" + playerData.profileIconId + ".png"}></img>
+            <Typography variant="h5">{playerData.profileIconId}</Typography>
           </ListItemText>
           </ListItemText>
         </List>

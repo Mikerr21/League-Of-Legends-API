@@ -129,6 +129,7 @@ function App() {
             </Typography>
             <ListItemText>
               <img width="100" height="100" src={"http://ddragon.leagueoflegends.com/cdn/11.21.1/img/profileicon/" + playerData.profileIconId + ".png"}></img>
+         //   <Typography variant="h5">{playerData.profileIconId}</Typography>
           </ListItemText>
           </ListItemText>
         </List>
