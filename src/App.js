@@ -28,7 +28,7 @@ import Grid from "@mui/material/Grid";
 function App() {
   const [searchPlayer, setSearchPlayer] = useState("");
   const [playerData, setPlayerData] = useState({});
-  const API_KEY = "c4eb3244-2494-4789-a6a3-47b4f6d5b70a";
+  const API_KEY = "I cannot expose the key";
 
   function fetchPlayerData(event) {
     var API_KEY = "RGAPI-e5d7e95c-8a4e-4469-bf42-53bc6d1175b3";
